@@ -800,6 +800,34 @@ print(person1.display())
 
 
 
+#Class Example 2
+class Flight():
+  def __init__(self, capacity):
+    self.capacity= capacity
+    self.passengers= []
+
+  def add_passenger(self, name):
+    if not self.open_seats(): #checks if there is open seats
+      return False
+    self.passengers.append(name)
+    return True
+  
+  def open_seats(self):
+    return self.capacity- len(self.passengers) 
+
+
+flight1= Flight(3)
+friends= ["Mustafa","Virus","Hamada","Hamza"]
+
+for i in friends:
+  success= flight1.add_passenger(i) 
+  if success:
+    print(f"we added {i} successfully") #prints who was added successfully
+  else:
+    print(f"{i} has no open seat") #prints who exceeded the open_seat() limit
+
+    
+    
 #filter(), it filters list ((e.g: filter odd numbers only from list))
 def isOdd(n):
   return n%2 != 0
