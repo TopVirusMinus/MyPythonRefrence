@@ -1,0 +1,1 @@
+# install django (pip install Django)
