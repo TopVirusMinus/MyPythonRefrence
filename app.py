@@ -8,6 +8,10 @@ print("Hello World")
 name= "Mustafa"
 age= 18
 
+#print f
+n= "Hello"
+print(f"{n} World")
+
 #adding variables to text
 name="Mustafa"
 print("My name is "+name)
@@ -99,7 +103,7 @@ from math import *
 number= 81
 print(sqrt(number))
 
-#getting input form user
+#getting input form user (always considers things strings so you should specify if you want it int)
 name= input("Enter your name: ")
 print("Hello "+name)
 
