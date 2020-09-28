@@ -224,7 +224,10 @@ list_of_tuples= [(2,3),(5,6),(2,6)]
 print(list_of_tuples[0][0])
 
 #?--------------------------------------------
-
+#list- sequence of mutable values
+#tuple- sequence of immutable values
+#set- collection of unique values (no duplicates)
+#dict- collection of key-value pairs
 
 
 
