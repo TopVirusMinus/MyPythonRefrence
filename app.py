@@ -224,6 +224,28 @@ list_of_tuples= [(2,3),(5,6),(2,6)]
 print(list_of_tuples[0][0])
 
 #?--------------------------------------------
+#! Sets(no duplicates or order matters)
+s= set() #defining set
+s.add(1) #adding elements to sett
+s.add(2)
+s.add(3)
+s.add(4)
+s.add(3) #will not appear because we already have a 3
+
+s.remove(2) #removes value from set
+print(f"The set contains {len(s)} elements")
+
+
+
+
+
+
+
+
+
+
+
+
 #list- sequence of mutable values
 #tuple- sequence of immutable values
 #set- collection of unique values (no duplicates)
